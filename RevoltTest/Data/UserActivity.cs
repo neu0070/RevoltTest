@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace RevoltTest.Data
+{
+    public class UserActivity
+    {
+        public int ID { get; set; }
+        public int UserID { get; set; }
+        public string Action { get; set; }
+        public DateTime DateOfExecution { get; set; }
+    }
+}
