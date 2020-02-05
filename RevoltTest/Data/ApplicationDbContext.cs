@@ -19,6 +19,8 @@ namespace RevoltTest.Data
         {
             base.OnModelCreating(modelBuilder);
             //modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            modelBuilder.Entity<IdentityRole>().HasData(new IdentityRole { Name = "Admin", NormalizedName = "Admin".ToUpper() });
         }
 
         public DbSet<UserActivity> UserActivities { get; set; }
